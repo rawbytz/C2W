@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: left;
+      margin: 80px;
+    }
+
+    a:link {
+      color: #6ACFCD
+    }
+
+    a:visited {
+      color: Gray;
+    }
+  </style>
+</head>
+<body>
+  <h3>Version 2.9</h3>
+  <p><b>To install, drag the link to your bookmarks bar.</b></p>
+  <br>
+  <p><b><a href="javascript:(function&#32;C2W_2_9(){function&#32;eOPML(str){return&#32;str.replace(/&amp;/g,'&amp;amp;amp;').replace(/&lt;/g,'&amp;amp;lt;').replace(/&gt;/g,'&amp;amp;gt;').replace(/&quot;/g,'&amp;quot;').replace(/(\n)/g,'&amp;#10;')}function&#32;copyThat(str){const&#32;t=document.createElement(&quot;textarea&quot;);t.value=str;document.body.appendChild(t);t.select();const&#32;success=document.execCommand(&quot;copy&quot;);document.body.removeChild(t);return&#32;success}function&#32;toastMsg(str,sec,err){WF.showMessage(str,err);setTimeout(WF.hideMessage,(sec||2)*1e3)}const&#32;IS_WF=typeof&#32;WF===&quot;object&quot;&amp;&amp;typeof&#32;WF.currentItem===&quot;function&quot;;const&#32;copyAndToastExt=(str,message,isWF)=&gt;copyThat(str)?isWF?toastMsg(message,2):null:prompt(&quot;\nCopy&#32;failed.\n\nCopy&#32;this&#32;manually.&quot;,str);const&#32;name=eOPML(document.title.replace(/&#32;-&#32;WorkFlowy$/,&quot;&quot;));const&#32;bullet=IS_WF?`&amp;lt;i&amp;gt;See:&#32;&amp;quot;${name}&amp;quot;&amp;lt;/i&amp;gt;`:name;const&#32;selection=window.getSelection().toString();const&#32;link=eOPML(location.href);const&#32;note=selection?`..${link}&amp;#10;&amp;#10;${eOPML(selection)}`:link;const&#32;clip=`&lt;opml&gt;&lt;body&gt;&lt;outline&#32;text=&quot;${bullet}&quot;&#32;_note=&quot;${note}&quot;&#32;/&gt;&lt;/body&gt;&lt;/opml&gt;`;copyAndToastExt(clip,&quot;Clip&#32;copied!&quot;,IS_WF)})();">Clip2WF</a></b></p>
+  <br>
+  <p><i>* Test it here by bookmarking this page! Click on the bookmarklet above & and then paste into a new WorkFlowy
+      bullet.</i></p>
+  <br>
+  <p><a href="https://gist.github.com/rawbytz/9917992cda4d6bfcc1a38226296c55dd">View Source</a></p>
+  <p><a href="https://rawbytz.wordpress.com/2015/11/21/clip-to-workflowy/">rawbytz.wordpress.com</a></p>
+</body>
+</html>
